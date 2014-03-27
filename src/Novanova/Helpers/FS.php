@@ -32,7 +32,7 @@ class FS
                 $path_part_3 = substr($filename, 0, 2);
                 $path_part_2 = substr($filename, 2, 2);
                 $path_part_1 = substr($filename, 4);
-                $filename = $path_part_3 . $DS . $path_part_2 . $DS . $path_part_1 . $DS . $ext;
+                $filename = $path_part_3 . $DS . $path_part_2 . $DS . $path_part_1 . '.' . $ext;
                 if (is_file($path . $DS . $filename)) {
                     $filename = null;
                 }
